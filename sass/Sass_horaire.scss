@@ -4,23 +4,45 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #004990;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.25em;
 }
 
 h1,
 h2,
 #horaire div p:nth-child(1) {
     font-weight: bold;
-    text-shadow: 5px 3px 5px rgb(156, 196, 202);
+    color: #fff;
+    text-shadow: 5px 3px 5px #111111;
     margin: 5px;
     padding: 0;
 }
 
+h3 {
+    color: #111111;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 #horaire div p:nth-child(1){
     font-size: 1.5em;
+    color: #fff;
+    text-shadow: none;
 }
 
 header {
     margin-bottom : 20px;
+}
+
+header h3 {
+    border-bottom: solid 2px #111111;
 }
 
 h3,p {
@@ -31,25 +53,43 @@ h3,p {
 p {
     margin: 0;
     padding: 0;
+    font-size: 1em;
+}
+
+main {
+    background-color: #b3e3e1;
+}
+
+main div h2 {
+    color: #004990;
+    text-shadow: 5px 3px 5px #004990;
+    text-decoration: underline;
+}
+
+.ActiveCommune {
+    text-decoration: none;
+    text-shadow: none;
+    text-align: center;
+    color: #111111;
 }
 
 #horaire div.veille {
-    background-color: rgb(170, 232, 168);
+    background-color: #004990;
 }
 
 #horaire div.projet {
-    background-color: #b3e3e1;
+    background-color: #004990;
 }
 
 #horaire {
     display: grid;
     grid-template-columns: .08fr repeat(5, 1fr);
     grid-auto-rows: minmax(50px, auto);
-    border: 1px solid #aaa;
+    border: 1px solid #111111;
 }
 
 #horaire div {
-    border: 1px solid #aaa;
+    border: 1px solid #111111;
     grid-gap: 10px;
     grid-row: 1;
     display: flex;
@@ -57,29 +97,29 @@ p {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    font-weight: bold;
+    
 }
 
 #horaire div:nth-child(1) {
     grid-column: 2;
     grid-row: 1/12;
-    border: 1px solid #aaa;
+    border: 1px solid #111111;
     justify-content: flex-start;
 }
 
 #horaire div:nth-child(2) {
     grid-column: 3;
     grid-row: 1/12;
-    border: 1px solid #aaa;
+    border: 1px solid #111111;
     justify-content: flex-start;
-
 }
 
 #horaire div:nth-child(3) {
     grid-column: 4;
     grid-row: 1/12;
-    border: 1px solid #aaa;
+    border: 1px solid #111111;
     justify-content: flex-start;
-
 }
 
 #horaire div:nth-child(4) {
@@ -94,44 +134,47 @@ p {
 #horaire div:nth-child(6) {
     grid-column: 1;
     grid-row: 2;
+    text-decoration: underline;
 }
 
 /* 12h */
 #horaire div:nth-child(7) {
     grid-column: 1;
     grid-row: 6;
+    text-decoration: underline;
 }
 
 /* 13h */
 #horaire div:nth-child(8) {
     grid-column: 1;
     grid-row: 7;
+    text-decoration: underline;
 }
 
 /* 14h */
 #horaire div:nth-child(9) {
     grid-column: 1;
     grid-row: 8;
+    text-decoration: underline;
 }
 
 /* 17h */
 #horaire div:nth-child(10) {
     grid-column: 1;
     grid-row: 12;
+    text-decoration: underline;
 }
 
 #horaire div.colonne_heure {
     grid-column: 1;
     grid-row: 1 / 12;
-    background-color: rgb(235, 195, 15);
-    opacity: .25;
 }
 
 #horaire div.lundi {
     grid-row: 2 / 7;
     grid-column: 2;
-    border: 1px solid #aaa;
-
+    border: 1px solid #111111;
+    background-color: #004990;
 }
 
 #horaire div.mardi {
@@ -146,7 +189,6 @@ p {
 }
 
 #horaire div.disponibilite > div {
-    transform: rotate(-25deg);
     border : none;
 }
 
@@ -189,6 +231,7 @@ p {
 #horaire div.vendredi_video {
     grid-row: 2 / 6;
     grid-column: 6;
+    background-color: #004990;
 }
 
 #horaire div.vendredi {
@@ -209,5 +252,5 @@ header {
 }
 
 .disponibilite {
-    background-color: #d0e22b40;
+    background-color: #fff;
 }

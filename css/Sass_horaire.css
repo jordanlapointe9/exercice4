@@ -10,6 +10,8 @@ body {
 
 h1 {
   font-size: 4em;
+  border: solid 2px #fff;
+  padding: 0.25em !important;
 }
 
 h2 {
@@ -43,7 +45,8 @@ header {
 }
 
 header h3 {
-  border-bottom: solid 2px #111111;
+  color: #fff;
+  text-shadow: 5px 3px 5px #111111;
 }
 
 h3, p {
@@ -71,7 +74,7 @@ main div h2 {
   text-decoration: none;
   text-shadow: none;
   text-align: center;
-  color: #111111;
+  color: #fff;
 }
 
 #horaire div.veille {
@@ -332,6 +335,6 @@ header {
 }
 
 .disponibilite {
-  background-color: #fff;
+  background-color: #004990;
 }
 /*# sourceMappingURL=Sass_horaire.css.map */
